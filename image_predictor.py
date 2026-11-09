@@ -35,8 +35,15 @@ def predict_image(all_images, model):
     print("List of images: \n")
     for index, img in enumerate(all_images):
         print(f"{index +1 }:{img} \n")
-    selected_img = int(input("\nEnter the number of the image you want to predict: "))
-    selected_img = all_images[selected_img-1] 
+    
+    while True:
+        selected_img = int(input("\nEnter the number of the image you want to predict: "))
+        if selected_img >= 1 and selected_img <= len(all_images):
+            selected_img = all_images[selected_img-1]
+            break
+        else:
+            print(f"Error: Number out of range. Please enter a number between 1 and {len(all_images)}.")
+     
     img_path = f'images/{selected_img}'
 
     #Load and process the image
