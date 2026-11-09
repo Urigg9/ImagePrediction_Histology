@@ -57,7 +57,7 @@ pip install -r requirements.txt
 Run a prediction:
 Start the interactive inference script from the terminal:
 
-python image_prediction.py
+python image_predictor.py
 
 The program will prompt you for the name of the image to analyze (this file must be located in the images/ folder). Possible example: example_1.png. And will return the prediction:
 
