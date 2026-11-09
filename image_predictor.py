@@ -37,7 +37,7 @@ def predict_image(all_images, model):
         print(f"{index +1 }:{img} \n")
     
     while True:
-        selected_img = int(input("\nEnter the number of the image you want to predict: "))
+        selected_img = int(input("\nEnter the number of the image you want to predict:  "))
         if selected_img >= 1 and selected_img <= len(all_images):
             selected_img = all_images[selected_img-1]
             break
