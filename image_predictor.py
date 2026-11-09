@@ -35,7 +35,7 @@ def predict_image(all_images, model):
     print("List of images: \n")
     for index, img in enumerate(all_images):
         print(f"{index +1 }:{img} \n")
-    selected_img = int(input("\n Enter the number of the image you want to predict: "))
+    selected_img = int(input("\nEnter the number of the image you want to predict: "))
     selected_img = all_images[selected_img-1] 
     img_path = f'images/{selected_img}'
 

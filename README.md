@@ -59,7 +59,7 @@ Start the interactive inference script from the terminal:
 
 python image_predictor.py
 
-The program will prompt you for the name of the image to analyze (this file must be located in the images/ folder). Possible example: example_1.png. And will return the prediction:
+The program will prompt you for the name of the image to analyze (this file must be located in the images/ folder), and will return the prediction, for example:
 
 ![Prediction](assets/Figure_1.png)
 
